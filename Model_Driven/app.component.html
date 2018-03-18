@@ -1,0 +1,17 @@
+<form  class="container"
+  [formGroup] = "form"
+  (ngSubmit) = "onSubmit(form.value)">
+  <input type="text" name = "firstname" autocomplete="off" placeholder="firstname" formControlName = "firstname">
+  <br>
+  <br>
+  <input type="text" name="lastname" autocomplete="off" placeholder="lastname" formControlName = "lastname">
+  <br>
+  <br>
+  <select name = "languages" formControlName = "languages">
+    <option value="C++">C++</option>
+    <option value="java">java</option>
+    <option value="Angular">Angular</option>
+  </select>
+  <br><br>
+  <input type="submit" value="submit" class="button">
+</form>
