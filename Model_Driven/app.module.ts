@@ -6,24 +6,24 @@ import { HttpModule }  from '@angular/http';
 import {ReactiveFormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { ProductComponent } from './product/product.component';
-import { MembersComponent } from './members/members.component';
+//import { ProductComponent } from './product/product.component';
+// import { MembersComponent } from './members/members.component';
 //import { SortPipe } from "./app.sort";
 
 @NgModule({
   declarations: [
   //  SortPipe, 
     AppComponent,
-    ProductComponent,
-    MembersComponent,
+  //  ProductComponent,
+   // MembersComponent,
     ],
   imports: [
     BrowserModule,
     RouterModule,
     ReactiveFormsModule,
     FormsModule,
-    HttpModule,
-    RouterModule.forRoot([
+    HttpModule
+   /* RouterModule.forRoot([
      {
        path : 'member',
        component: MembersComponent
@@ -32,7 +32,7 @@ import { MembersComponent } from './members/members.component';
        path: 'product',
        component: ProductComponent
      }
-    ])
+    ])*/
   ],
   providers: [],
   bootstrap: [AppComponent]
